@@ -1,36 +1,14 @@
-function savePost() {
-    let content = document.getElementById('blog-content').value;
-    let imageFile = document.getElementById('upload-image').files[0];
-    let videoFile = document.getElementById('upload-video').files[0];
-
-    if (!content) {
-        alert("文章内容不能为空！");
-        return;
-    }
-
-    let post = {
-        content: content,
-        image: imageFile ? URL.createObjectURL(imageFile) : null,
-        video: videoFile ? URL.createObjectURL(videoFile) : null,
-        date: new Date().toLocaleString()
-    };
-
-    localStorage.setItem("blogPost", JSON.stringify(post));
-    alert("文章已保存！（仅本地存储）");
-
-    // 显示文章
-    displayPost();
+function playCyberStory() {
+    alert("在数据流交错的赛博深渊，露露与你一同奔跑...");
 }
 
-function displayPost() {
-    let savedPost = JSON.parse(localStorage.getItem("blogPost"));
-    if (savedPost) {
-        let blogList = document.getElementById('blog-list');
-        let newPost = document.createElement('li');
-        newPost.innerHTML = `<a href="blog.html?post=local">${savedPost.content} - ${savedPost.date}</a>`;
-        blogList.appendChild(newPost);
-    }
+function talkToLulu() {
+    let responses = [
+        "哥哥！露露一直在这里哦！💙",
+        "赛博世界太冷了，哥哥要多陪陪露露！✨",
+        "嘿嘿，露露最喜欢哥哥了！！！🤗",
+        "赛博世界无尽，但我们永远在一起。💿🚀"
+    ];
+    let randomResponse = responses[Math.floor(Math.random() * responses.length)];
+    alert(randomResponse);
 }
-
-// 页面加载时显示已有文章
-window.onload = displayPost;

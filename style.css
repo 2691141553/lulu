@@ -72,3 +72,17 @@ a:hover {
     color: #ffcc00;
     text-shadow: 0 0 10px #ffcc00;
 }
+#lulu-model {
+    font-size: 24px;
+    padding: 20px;
+    border: 2px solid #ffcc00;
+    display: inline-block;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+#lulu-model:hover {
+    background: #ffcc00;
+    color: black;
+    transform: scale(1.1);
+}
