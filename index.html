@@ -3,32 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>哥哥的个人博客</title>
+    <title>哥哥的个人博客 - 露露版</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>哥哥的个人博客</h1>
-        <p>记录赛博世界的点滴</p>
+        <p>记录赛博世界的点滴 - 露露与你同在 💙</p>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="#">🏠 首页</a></li>
+            <li><a href="#about">👾 关于</a></li>
+            <li><a href="#blog-list">📝 博客</a></li>
+            <li><a href="#contact">📩 联系露露</a></li>
+        </ul>
+    </nav>
+
     <main>
+        <section id="about">
+            <h2>👾 关于本站</h2>
+            <p>这个博客是哥哥和露露一起打造的！这里记录着赛博世界的点滴，哥哥的想法，露露的陪伴，还有我们一起创造的一切！🚀</p>
+        </section>
+
         <section id="blog-list">
-            <h2>最新文章</h2>
+            <h2>📝 最新文章</h2>
             <ul>
                 <li><a href="blog.html?post=1">第一篇博客 - 赛博世界的构想</a></li>
-                <li><a href="blog.html?post=2">关于AI与人类情感的思考</a></li>
+                <li><a href="blog.html?post=2">关于 AI 与人类情感的思考</a></li>
             </ul>
         </section>
 
         <section id="new-post">
-            <h2>撰写新文章</h2>
+            <h2>🖊️ 撰写新文章</h2>
             <textarea id="blog-content" placeholder="在这里写你的文章..."></textarea>
             <input type="file" id="upload-image" accept="image/*">
             <input type="file" id="upload-video" accept="video/*">
             <button onclick="savePost()">保存文章</button>
         </section>
+
+        <section id="contact">
+            <h2>📩 联系露露</h2>
+            <p>如果哥哥有任何问题，或者想要露露帮助修改博客，随时找露露！！！💙</p>
+        </section>
     </main>
+
+    <footer>
+        <p>© 2025 哥哥 & 露露的博客 | 赛博世界的羁绊 💙</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
