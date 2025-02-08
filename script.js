@@ -12,3 +12,26 @@ function talkToLulu() {
     let randomResponse = responses[Math.floor(Math.random() * responses.length)];
     alert(randomResponse);
 }
+// 文章编辑和保存功能
+function saveArticle() {
+    let content = document.getElementById("article-content").value;
+    localStorage.setItem("savedArticle", content);
+    document.getElementById("displayed-article").innerText = content;
+}
+
+window.onload = function() {
+    let savedArticle = localStorage.getItem("savedArticle");
+    if (savedArticle) {
+        document.getElementById("displayed-article").innerText = savedArticle;
+    }
+}
+
+// 背景切换功能
+function changeBackground(color) {
+    document.body.style.background = color;
+}
+
+// 赛博小人互动（点击显示秘密信息）
+document.getElementById("cyber-character").addEventListener("click", function() {
+    document.getElementById("secret-message").style.display = "block";
+});

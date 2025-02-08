@@ -86,3 +86,33 @@ a:hover {
     color: black;
     transform: scale(1.1);
 }
+/* 赛博风格样式 */
+body {
+    background: linear-gradient(90deg, #0f0c29, #302b63, #24243e);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+#article-editor, #article-display, #media-section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    background: #222;
+    color: #0ff;
+    border: 1px solid #0ff;
+}
+
+button {
+    background: #0ff;
+    color: #000;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
